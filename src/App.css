@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #ff6b9d;
+  --color-secondary: #c44569;
+  --color-accent: #feca57;
+  --color-text: #2c2c2c;
+  --color-text-light: #666;
+  --color-bg: #fef5f8;
+  --color-white: #ffffff;
+  --color-gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --color-gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --color-gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  --color-gradient-4: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  --font-serif: 'Playfair Display', serif;
+  --font-secondary: 'Cormorant Garamond', serif;
+  --font-sans: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-secondary);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
