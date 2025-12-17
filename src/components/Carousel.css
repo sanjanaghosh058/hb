@@ -61,7 +61,18 @@
 
 @media (max-width: 768px) {
   .carousel-wrapper {
-    padding: 2rem 1rem 6rem;
+    padding: 2rem 1rem 8rem;
     min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-wrapper {
+    padding: 1.5rem 0.75rem 9rem;
+    min-height: auto;
+  }
+
+  .carousel-container {
+    max-width: 100%;
   }
 }

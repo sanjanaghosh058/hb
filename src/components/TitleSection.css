@@ -204,19 +204,52 @@
 
 @media (max-width: 768px) {
   .title-section {
-    padding: 3rem 1.5rem;
+    padding: 2.5rem 1rem;
+    min-height: auto;
   }
 
   .main-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
   }
 
   .subtitle {
-    font-size: 1rem;
-    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+    padding: 0.7rem 1.2rem;
   }
 
   .heart {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-section {
+    padding: 2rem 0.75rem;
+    min-height: auto;
+  }
+
+  .main-title {
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+
+  .title-word {
+    display: block;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .heart {
+    font-size: 1.2rem;
+  }
+
+  .scroll-indicator {
+    bottom: 1.5rem;
   }
 }
